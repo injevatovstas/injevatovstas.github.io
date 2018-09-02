@@ -51,6 +51,11 @@ header{
     color: #072b6f;
     margin-top: 33px;
     font-size: 18px;
+    transition: 0.2s
+}
+
+.header-button:hover{
+	box-shadow: none;
 }
 
 .header-button-block{
@@ -166,6 +171,12 @@ footer{
 	color: #fff;
 	font-size: 18px;
 	font-weight: 400;
+	transition: 0.2s;
+}
+
+.footer-button:hover{
+	background: #fff;
+	color:#3a7dfd;
 }
 
 .footer-cta{

@@ -17,6 +17,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,17 +27,17 @@
  		<div class="container">
  			<div class="row">
  				<div class="col-lg-7">
- 					<img class="header-img" src="img/main-img.png" alt="">
+ 					<img class="header-img  animated bounceInLeft" src="img/main-img.png" alt="">
  				</div>
  				<!-- /.col-7 -->
  				<div class="col-lg-5">
- 					<p class="head-predtitle">Веб-разработчик</p>
- 					<div class="header-title"> 
+ 					<p class="head-predtitle wow bounceInRight" data-wow-delay="0.1s">Веб-разработчик</p>
+ 					<div class="header-title wow bounceInRight" data-wow-delay="0.2s"> 
  						<h1>Инжеватов Станислав</h1>
  					</div>
- 					<p class="head-subtitle">Верстка на HTML/CSS <br>
+ 					<p class="head-subtitle wow bounceInRight" data-wow-delay="0.3s">Верстка на HTML/CSS <br>
      				Разработка сайтов под ключ</p>
-     				<div class="header-button-block">
+     				<div class="header-button-block wow bounceInRight" data-wow-delay="0.4s">
      					<a href="https://vk.com/tedbandi2010" class="header-button">Связаться</a>
      					<small>*Это бесплатно</small>
      				</div>
@@ -48,11 +49,11 @@
  	</header>
  	<section class="portfolio">
  		<div class="container">
- 			<div class="portfolio-block">
+ 			<div class="portfolio-block animated fadeIn">
  				<h3 class="portfolio-title">Портфолио</h3>
  				<p class="portfolio-subtitle">Мои работы</p>
  				<div class="row">
- 					<div class="col-md-6">md-
+ 					<div class="col-md-6">
  						<div class="portfolio-col-1">
  							<img src="img/portfolio-1.jpg" alt="gazprom">
  							<h3>внутренний университет «Газпром нефти»</h3>
@@ -84,10 +85,10 @@
  				<div class="col-md-4">
  					<div class="social-block">
  						<p>Подпишитесь:</p>
- 						<a href="#"><img src="img/social/facebook.png" alt="facebook"></a>
- 						<a href="#"><img src="img/social/vk.png" alt="vk"></a>
- 						<a href="#"><img src="img/social/telegram.png" alt="telegram"></a>
- 						<a href="#"><img src="img/social/youtube.png" alt="youtube"></a>
+ 						<a href="#"><img src="img/social/facebook.png" alt="facebook" class="wow bounceInDown" data-wow-delay="0.1s"></a>
+ 						<a href="#"><img src="img/social/vk.png" alt="vk" class="wow bounceInDown" data-wow-delay="0.2s"></a>
+ 						<a href="#"><img src="img/social/telegram.png" alt="telegram" class="wow bounceInDown" data-wow-delay="0.3s"></a>
+ 						<a href="#"><img src="img/social/youtube.png" alt="youtube" class="wow bounceInDown" data-wow-delay="0.4s"></a>
  					</div>
  					<!-- /.social-block -->
  				</div>
@@ -100,6 +101,11 @@
  			</div>
  		</div>
  	</footer>
+
+ 	<script src="js/wow.min.js"></script>
+ 	<script>
+ 		new WOW().init();
+ 	</script>
 
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
